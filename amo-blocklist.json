@@ -151,6 +151,9 @@
             }
           }
         }
+      },
+      "uiSchema": {
+        "ui:order": ["enabled", "addonId", "os", "versionRange", "prefs"]
       }
     }
   },
