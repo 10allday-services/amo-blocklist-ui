@@ -149,11 +149,32 @@
                 }
               }
             }
+          },
+          "details": {
+            "type": "object",
+            "title": "Details",
+            "properties": {
+              "name": {"type": "string"},
+              "why": {"type": "string"},
+              "who": {"type": "string"},
+              "bug": {"type": "string"}
+            }
           }
         }
       },
       "uiSchema": {
-        "ui:order": ["enabled", "addonId", "os", "versionRange", "prefs"]
+        "ui:order": [
+          "enabled",
+          "addonId",
+          "os",
+          "versionRange",
+          "prefs",
+          "details"
+        ],
+        "details": {
+          "why": {"ui:widget": "textarea"},
+          "who": {"ui:widget": "textarea"}
+        }
       }
     }
   },
@@ -286,7 +307,23 @@
               "GREATER_THAN",
               "GREATER_THAN_OR_EQUAL"
             ]
+          },
+          "details": {
+            "type": "object",
+            "title": "Details",
+            "properties": {
+              "name": {"type": "string"},
+              "why": {"type": "string"},
+              "who": {"type": "string"},
+              "bug": {"type": "string"}
+            }
           }
+        }
+      },
+      "uiSchema": {
+        "details": {
+          "why": {"ui:widget": "textarea"},
+          "who": {"ui:widget": "textarea"}
         }
       }
     }
@@ -442,7 +479,23 @@
                 }
               }
             }
+          },
+          "details": {
+            "type": "object",
+            "title": "Details",
+            "properties": {
+              "name": {"type": "string"},
+              "why": {"type": "string"},
+              "who": {"type": "string"},
+              "bug": {"type": "string"}
+            }
           }
+        }
+      },
+      "uiSchema": {
+        "details": {
+          "why": {"ui:widget": "textarea"},
+          "who": {"ui:widget": "textarea"}
         }
       }
     }
