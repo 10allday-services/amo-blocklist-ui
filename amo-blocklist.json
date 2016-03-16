@@ -168,7 +168,8 @@
               "name": {"type": "string"},
               "why": {"type": "string"},
               "who": {"type": "string"},
-              "bug": {"type": "string"}
+              "bug": {"type": "string"},
+              "created": {"type": "date-time"}
             }
           }
         }
@@ -184,7 +185,8 @@
         ],
         "details": {
           "why": {"ui:widget": "textarea"},
-          "who": {"ui:widget": "textarea"}
+          "who": {"ui:widget": "textarea"},
+          "created": {"type": "date-time"}
         }
       }
     }
@@ -395,7 +397,8 @@
               "name": {"type": "string"},
               "why": {"type": "string"},
               "who": {"type": "string"},
-              "bug": {"type": "string"}
+              "bug": {"type": "string"},
+              "created": {"type": "date-time"}
             }
           }
         }
@@ -578,7 +581,8 @@
               "name": {"type": "string"},
               "why": {"type": "string"},
               "who": {"type": "string"},
-              "bug": {"type": "string"}
+              "bug": {"type": "string"},
+              "created": {"type": "date-time"}
             }
           }
         }
