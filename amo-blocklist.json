@@ -172,7 +172,6 @@
           "details"
         ],
         "details": {
-          "bug": {"type": "string"},
           "why": {"ui:widget": "textarea"},
           "who": {"ui:widget": "textarea"}
         }
@@ -213,7 +212,23 @@
             "type": "string",
             "title": "Serial number",
             "description": "The certificate serial number."
+          },
+          "details": {
+            "type": "object",
+            "title": "Details",
+            "properties": {
+              "name": {"type": "string"},
+              "why": {"type": "string"},
+              "who": {"type": "string"},
+              "bug": {"type": "string"}
+            }
           }
+        }
+      },
+      "uiSchema": {
+        "details": {
+          "why": {"ui:widget": "textarea"},
+          "who": {"ui:widget": "textarea"}
         }
       }
     }
