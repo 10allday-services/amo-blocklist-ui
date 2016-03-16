@@ -252,7 +252,28 @@
           "os": {
             "type": "string",
             "title": "OS",
-            "description": "The operating system identifier."
+            "description": "The operating system identifier.",
+            "enum": [
+              "",
+              "All",
+              "Android",
+              "Darwin 9",
+              "Darwin 10",
+              "Darwin 11",
+              "Darwin 12",
+              "Darwin 13",
+              "Darwin 14",
+              "Darwin 15",
+              "Linux",
+              "WINNT 5.1",
+              "WINNT 5.2",
+              "WINNT 6.0",
+              "WINNT 6.1",
+              "WINNT 6.2",
+              "WINNT 6.3",
+              "WINNT 10.0",
+              "Other"
+            ]
           },
           "vendor": {
             "type": "string",
