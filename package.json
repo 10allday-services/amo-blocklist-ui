@@ -9,9 +9,11 @@
     "test": "echo \"Tested in kinto-admin.\""
   },
   "dependencies": {
-    "kinto-admin": "^0.7.0"
+    "kinto-admin": "^0.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "fake-indexeddb": "1.0.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mozilla-services/amo-blocklist-ui.git"
