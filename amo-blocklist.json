@@ -300,8 +300,11 @@
             "description": "The feature status.",
             "enum": [
               "",
+              "BLOCKED_DEVICE",
               "BLOCKED_DRIVER_VERSION",
-              "BLOCKED_DEVICE"
+              "BLOCKED_OS_VERSION",
+              "DISCOURAGED",
+              "STATUS_OK"
             ]
           },
           "driverVersion": {
