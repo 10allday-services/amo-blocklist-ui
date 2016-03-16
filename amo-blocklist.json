@@ -302,6 +302,10 @@
             "enum": [
               "",
               "EQUAL",
+              "NOT_EQUAL",
+              "BETWEEN_EXCLUSIVE",
+              "BETWEEN_INCLUSIVE",
+              "BETWEEN_INCLUSIVE_START",
               "LESS_THAN",
               "LESS_THAN_OR_EQUAL",
               "GREATER_THAN",
