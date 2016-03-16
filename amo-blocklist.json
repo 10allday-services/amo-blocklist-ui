@@ -172,6 +172,7 @@
           "details"
         ],
         "details": {
+          "bug": {"type": "string"},
           "why": {"ui:widget": "textarea"},
           "who": {"ui:widget": "textarea"}
         }
