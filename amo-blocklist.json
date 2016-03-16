@@ -330,6 +330,26 @@
               "GREATER_THAN_OR_EQUAL"
             ]
           },
+          "model": {
+            "type": "string",
+            "title": "Model",
+            "description": "The graphic card model, eg. GT-I8160, atlas"
+          },
+          "product": {
+            "type": "string",
+            "title": "Product",
+            "description": "The name of the overall product."
+          },
+          "manufacturer": {
+            "type": "string",
+            "title": "Manufacturer",
+            "description": "The graphic card manufacturer, eg. sony"
+          },
+          "hardware": {
+            "type": "string",
+            "title": "Hardware",
+            "description": "The graphic hardware name, eg. antares"
+          },
           "details": {
             "type": "object",
             "title": "Details",
