@@ -262,6 +262,7 @@
         "default": {
           "os": "",
           "vendor": "",
+          "hardware": "",
           "devices": [],
           "feature": "",
           "featureStatus": "",
@@ -381,6 +382,11 @@
               "GREATER_THAN",
               "GREATER_THAN_OR_EQUAL"
             ]
+          },
+          "hardware": {
+            "type": "string",
+            "title": "Hardware",
+            "description": "The graphic hardware name, eg. antares"
           },
           "details": {
             "type": "object",
