@@ -273,7 +273,26 @@
           "feature": {
             "type": "string",
             "title": "Feature",
-            "description": "The type of feature impacted."
+            "description": "The type of feature impacted.",
+            "enum": [
+              "",
+              "CANVAS2D_ACCELERATION",
+              "DIRECT2D",
+              "DIRECT3D_9_LAYERS",
+              "DIRECT3D_10_LAYERS",
+              "DIRECT3D_10_1_LAYERS",
+              "DIRECT3D_11_LAYERS",
+              "DIRECT3D_11_ANGLE",
+              "HARDWARE_VIDEO_DECODING",
+              "OPENGL_LAYERS",
+              "STAGEFRIGHT",
+              "WEBGL_OPENGL",
+              "WEBGL_ANGLE",
+              "WEBGL_MSAA",
+              "WEBRTC_HW_ACCELERATION_ENCODE",
+              "WEBRTC_HW_ACCELERATION_DECODE",
+              "WEBRTC_HW_ACCELERATION"
+            ]
           },
           "featureStatus": {
             "type": "string",
