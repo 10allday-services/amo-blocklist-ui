@@ -9,7 +9,7 @@
     "test": "echo \"Tested in kinto-admin.\""
   },
   "dependencies": {
-    "kinto-admin": "^0.10.1"
+    "kinto-admin": "^0.10.2"
   },
   "devDependencies": {
     "fake-indexeddb": "1.0.3"
