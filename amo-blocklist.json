@@ -3,7 +3,7 @@
     "name": "add-ons",
     "synced": true,
     "config": {
-      "displayFields": ["enabled", "addonId", "os"],
+      "displayFields": ["enabled", "guid", "os"],
       "schema": {
         "definitions": {
           "minVersion": {
@@ -22,10 +22,10 @@
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "addonId"
+          "guid"
         ],
         "default": {
-          "addonId": "",
+          "guid": "",
           "os": "",
           "prefs": [],
           "versionRange": [{}]
@@ -37,10 +37,10 @@
             "description": "blocking rule is enabled.",
             "default": false
           },
-          "addonId": {
+          "guid": {
             "type": "string",
             "title": "Add-on id",
-            "description": "The add-on unique identifier.",
+            "description": "The add-on unique identifier or a regular expression.",
             "minLength": 1,
             "default": ""
           },
@@ -172,7 +172,7 @@
       "uiSchema": {
         "ui:order": [
           "enabled",
-          "addonId",
+          "guid",
           "os",
           "versionRange",
           "prefs",
