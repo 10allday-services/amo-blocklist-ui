@@ -74,47 +74,42 @@
               "title": "Version range",
               "description": "Version range",
               "additionalProperties": false,
-              "required": [
-                "minVersion",
-                "maxVersion",
-                "severity"
-              ],
               "default": {
                 "minVersion": "",
                 "maxVersion": "",
-                "severity": "0",
-                "vulnerabilityStatus": ""
+                "severity": 0,
+                "vulnerabilityStatus": 0
               },
               "properties": {
                 "minVersion": {"$ref": "#/definitions/minVersion"},
                 "maxVersion": {"$ref": "#/definitions/maxVersion"},
                 "severity": {
-                  "type": "string",
+                  "type": "integer",
                   "title": "Severity",
                   "description": "The severity code number.",
                   "enum": [
-                    "0",
-                    "1",
-                    "2",
-                    "3"
+                    0,
+                    1,
+                    2,
+                    3
                   ],
-                  "default": "0"
+                  "default": 0
                 },
                 "vulnerabilityStatus": {
-                  "type": "string",
+                  "type": "integer",
                   "title": "Vulnerability status",
                   "description": "The vulnerability status code number.",
                   "enum": [
-                    "",
-                    "1",
-                    "2"
+                    0,
+                    1,
+                    2
                   ],
                   "enumNames": [
                     "",
                     "Update available",
                     "Update unavailable"
                   ],
-                  "default": ""
+                  "default": 0
                 },
                 "targetApplication": {
                   "type": "array",
@@ -127,12 +122,12 @@
                     "description": "Target application",
                     "additionalProperties": false,
                     "required": [
-                      "id",
+                      "guid",
                       "minVersion",
                       "maxVersion"
                     ],
                     "properties": {
-                      "id": {
+                      "guid": {
                         "type": "string",
                         "title": "Application id",
                         "description": "The application unique identifier.",
@@ -167,6 +162,12 @@
               "bug": {"type": "string"},
               "created": {"type": "string", "format": "date-time"}
             }
+          },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. i152",
+            "pattern": "^i[0-9]+$"
           }
         }
       },
@@ -177,7 +178,8 @@
           "os",
           "versionRange",
           "prefs",
-          "details"
+          "details",
+          "blockID"
         ],
         "details": {
           "why": {"ui:widget": "textarea"},
@@ -212,6 +214,12 @@
             "description": "blocking rule is enabled.",
             "default": false
           },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. c111",
+            "pattern": "^c[0-9]+$"
+          },
           "issuerName": {
             "type": "string",
             "title": "Issuer name",
@@ -229,7 +237,8 @@
               "name": {"type": "string"},
               "why": {"type": "string"},
               "who": {"type": "string"},
-              "bug": {"type": "string"}
+              "bug": {"type": "string"},
+              "created": {"type": "string", "format": "date-time"}
             }
           }
         }
@@ -297,6 +306,7 @@
               "WINNT 6.1",
               "WINNT 6.2",
               "WINNT 6.3",
+              "WINNT 8.1",
               "WINNT 10.0",
               "Other"
             ]
@@ -396,6 +406,12 @@
               "bug": {"type": "string"},
               "created": {"type": "string", "format": "date-time"}
             }
+          },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. g28",
+            "pattern": "^g[0-9]+$"
           }
         }
       },
@@ -489,47 +505,42 @@
               "title": "Version range",
               "description": "Version range",
               "additionalProperties": false,
-              "required": [
-                "minVersion",
-                "maxVersion",
-                "severity"
-              ],
               "default": {
                 "minVersion": "",
                 "maxVersion": "",
-                "severity": "0",
-                "vulnerabilityStatus": ""
+                "severity": 0,
+                "vulnerabilityStatus": 0
               },
               "properties": {
                 "minVersion": {"$ref": "#/definitions/minVersion"},
                 "maxVersion": {"$ref": "#/definitions/maxVersion"},
                 "severity": {
-                  "type": "string",
+                  "type": "integer",
                   "title": "Severity",
                   "description": "The severity code number.",
                   "enum": [
-                    "0",
-                    "1",
-                    "2",
-                    "3"
+                    0,
+                    1,
+                    2,
+                    3
                   ],
-                  "default": "0"
+                  "default": 0
                 },
                 "vulnerabilityStatus": {
-                  "type": "string",
+                  "type": "integer",
                   "title": "Vulnerability status",
                   "description": "The vulnerability status code number.",
                   "enum": [
-                    "",
-                    "1",
-                    "2"
+                    0,
+                    1,
+                    2
                   ],
                   "enumNames": [
                     "",
                     "Update available",
                     "Update unavailable"
                   ],
-                  "default": ""
+                  "default": 0
                 },
                 "targetApplication": {
                   "type": "array",
@@ -542,12 +553,12 @@
                     "description": "Target application",
                     "additionalProperties": false,
                     "required": [
-                      "id",
+                      "guid",
                       "minVersion",
                       "maxVersion"
                     ],
                     "properties": {
-                      "id": {
+                      "guid": {
                         "type": "string",
                         "title": "Application id",
                         "description": "The application unique identifier.",
@@ -582,6 +593,12 @@
               "bug": {"type": "string"},
               "created": {"type": "string", "format": "date-time"}
             }
+          },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. p165",
+            "pattern": "^p[0-9]+$"
           }
         }
       },
