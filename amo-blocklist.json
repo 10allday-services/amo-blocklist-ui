@@ -47,7 +47,8 @@
           "os": {
             "type": "string",
             "title": "OS",
-            "description": "The operating system identifier."
+            "description": "The comma-separated operating system identifiers, eg. Darwin,Linux",
+            "pattern": "^[^,]*(,[^,]+)*$"
           },
           "prefs": {
             "type": "array",
@@ -450,7 +451,8 @@
           "os": {
             "type": "string",
             "title": "OS",
-            "description": "The comma-separated operating system identifiers, eg. Darwin,Linux"
+            "description": "The comma-separated operating system identifiers, eg. Darwin,Linux",
+            "pattern": "^[^,]*(,[^,]+)*$"
           },
           "xpcomabi": {
             "type": "string",
