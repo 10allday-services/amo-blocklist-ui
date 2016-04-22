@@ -50,6 +50,12 @@
             "description": "The comma-separated operating system identifiers, eg. Darwin,Linux",
             "pattern": "^[^,]*(,[^,]+)*$"
           },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. i152",
+            "pattern": "^i[0-9]+$"
+          },
           "prefs": {
             "type": "array",
             "title": "Preferences",
@@ -207,6 +213,12 @@
             "description": "blocking rule is enabled.",
             "default": false
           },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. c111",
+            "pattern": "^c[0-9]+$"
+          },
           "issuerName": {
             "type": "string",
             "title": "Issuer name",
@@ -269,6 +281,12 @@
             "title": "Enabled",
             "description": "blocking rule is enabled.",
             "default": false
+          },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. g28",
+            "pattern": "^g[0-9]+$"
           },
           "os": {
             "type": "string",
@@ -443,6 +461,12 @@
             "title": "Enabled",
             "description": "blocking rule is enabled.",
             "default": false
+          },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. p165",
+            "pattern": "^p[0-9]+$"
           },
           "os": {
             "type": "string",
