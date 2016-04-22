@@ -127,12 +127,12 @@
                     "description": "Target application",
                     "additionalProperties": false,
                     "required": [
-                      "id",
+                      "guid",
                       "minVersion",
                       "maxVersion"
                     ],
                     "properties": {
-                      "id": {
+                      "guid": {
                         "type": "string",
                         "title": "Application id",
                         "description": "The application unique identifier.",
@@ -542,12 +542,12 @@
                     "description": "Target application",
                     "additionalProperties": false,
                     "required": [
-                      "id",
+                      "guid",
                       "minVersion",
                       "maxVersion"
                     ],
                     "properties": {
-                      "id": {
+                      "guid": {
                         "type": "string",
                         "title": "Application id",
                         "description": "The application unique identifier.",
