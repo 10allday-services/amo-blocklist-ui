@@ -82,39 +82,39 @@
               "default": {
                 "minVersion": "",
                 "maxVersion": "",
-                "severity": "0",
-                "vulnerabilityStatus": ""
+                "severity": 0,
+                "vulnerabilityStatus": 0
               },
               "properties": {
                 "minVersion": {"$ref": "#/definitions/minVersion"},
                 "maxVersion": {"$ref": "#/definitions/maxVersion"},
                 "severity": {
-                  "type": "string",
+                  "type": "integer",
                   "title": "Severity",
                   "description": "The severity code number.",
                   "enum": [
-                    "0",
-                    "1",
-                    "2",
-                    "3"
+                    0,
+                    1,
+                    2,
+                    3
                   ],
-                  "default": "0"
+                  "default": 0
                 },
                 "vulnerabilityStatus": {
-                  "type": "string",
+                  "type": "integer",
                   "title": "Vulnerability status",
                   "description": "The vulnerability status code number.",
                   "enum": [
-                    "",
-                    "1",
-                    "2"
+                    0,
+                    1,
+                    2
                   ],
                   "enumNames": [
                     "",
                     "Update available",
                     "Update unavailable"
                   ],
-                  "default": ""
+                  "default": 0
                 },
                 "targetApplication": {
                   "type": "array",
@@ -497,39 +497,39 @@
               "default": {
                 "minVersion": "",
                 "maxVersion": "",
-                "severity": "0",
-                "vulnerabilityStatus": ""
+                "severity": 0,
+                "vulnerabilityStatus": 0
               },
               "properties": {
                 "minVersion": {"$ref": "#/definitions/minVersion"},
                 "maxVersion": {"$ref": "#/definitions/maxVersion"},
                 "severity": {
-                  "type": "string",
+                  "type": "integer",
                   "title": "Severity",
                   "description": "The severity code number.",
                   "enum": [
-                    "0",
-                    "1",
-                    "2",
-                    "3"
+                    0,
+                    1,
+                    2,
+                    3
                   ],
-                  "default": "0"
+                  "default": 0
                 },
                 "vulnerabilityStatus": {
-                  "type": "string",
+                  "type": "integer",
                   "title": "Vulnerability status",
                   "description": "The vulnerability status code number.",
                   "enum": [
-                    "",
-                    "1",
-                    "2"
+                    0,
+                    1,
+                    2
                   ],
                   "enumNames": [
                     "",
                     "Update available",
                     "Update unavailable"
                   ],
-                  "default": ""
+                  "default": 0
                 },
                 "targetApplication": {
                   "type": "array",
