@@ -50,12 +50,6 @@
             "description": "The comma-separated operating system identifiers, eg. Darwin,Linux",
             "pattern": "^[^,]*(,[^,]+)*$"
           },
-          "blockID": {
-            "type": "string",
-            "title": "Internal blocklist id",
-            "description": "Original block id, eg. i152",
-            "pattern": "^i[0-9]+$"
-          },
           "prefs": {
             "type": "array",
             "title": "Preferences",
@@ -168,6 +162,12 @@
               "bug": {"type": "string"},
               "created": {"type": "string", "format": "date-time"}
             }
+          },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. i152",
+            "pattern": "^i[0-9]+$"
           }
         }
       },
@@ -178,7 +178,8 @@
           "os",
           "versionRange",
           "prefs",
-          "details"
+          "details",
+          "blockID"
         ],
         "details": {
           "why": {"ui:widget": "textarea"},
@@ -281,12 +282,6 @@
             "title": "Enabled",
             "description": "blocking rule is enabled.",
             "default": false
-          },
-          "blockID": {
-            "type": "string",
-            "title": "Internal blocklist id",
-            "description": "Original block id, eg. g28",
-            "pattern": "^g[0-9]+$"
           },
           "os": {
             "type": "string",
@@ -410,6 +405,12 @@
               "bug": {"type": "string"},
               "created": {"type": "string", "format": "date-time"}
             }
+          },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. g28",
+            "pattern": "^g[0-9]+$"
           }
         }
       },
@@ -461,12 +462,6 @@
             "title": "Enabled",
             "description": "blocking rule is enabled.",
             "default": false
-          },
-          "blockID": {
-            "type": "string",
-            "title": "Internal blocklist id",
-            "description": "Original block id, eg. p165",
-            "pattern": "^p[0-9]+$"
           },
           "os": {
             "type": "string",
@@ -597,6 +592,12 @@
               "bug": {"type": "string"},
               "created": {"type": "string", "format": "date-time"}
             }
+          },
+          "blockID": {
+            "type": "string",
+            "title": "Internal blocklist id",
+            "description": "Original block id, eg. p165",
+            "pattern": "^p[0-9]+$"
           }
         }
       },
