@@ -1,6 +1,6 @@
 {
   "add-ons": {
-    "name": "add-ons",
+    "name": "addons",
     "synced": true,
     "config": {
       "displayFields": ["enabled", "guid", "os"],
