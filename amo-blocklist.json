@@ -37,6 +37,11 @@
               "title": "Id",
               "description": "Record id."
             },
+            "schema": {
+              "type": "integer",
+              "title": "Schema version",
+              "description": "Schema version."
+            },
             "enabled": {
               "type": "boolean",
               "title": "Enabled",
@@ -180,6 +185,7 @@
         "uiSchema": {
           "ui:order": [
             "id",
+            "schema",
             "enabled",
             "guid",
             "os",
@@ -189,6 +195,9 @@
             "blockID"
           ],
           "id": {
+            "ui:widget": "hidden"
+          },
+          "schema": {
             "ui:widget": "hidden"
           },
           "details": {
@@ -222,6 +231,11 @@
               "type": "string",
               "title": "Id",
               "description": "Record id."
+            },
+            "schema": {
+              "type": "integer",
+              "title": "Schema version",
+              "description": "Schema version."
             },
             "enabled": {
               "type": "boolean",
@@ -262,6 +276,9 @@
           "id": {
             "ui:widget": "hidden"
           },
+          "schema": {
+            "ui:widget": "hidden"
+          },
           "details": {
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"}
@@ -300,6 +317,11 @@
               "type": "string",
               "title": "Id",
               "description": "Record id."
+            },
+            "schema": {
+              "type": "integer",
+              "title": "Schema version",
+              "description": "Schema version."
             },
             "enabled": {
               "type": "boolean",
@@ -442,6 +464,9 @@
           "id": {
             "ui:widget": "hidden"
           },
+          "schema": {
+            "ui:widget": "hidden"
+          },
           "details": {
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"}
@@ -488,6 +513,11 @@
               "type": "string",
               "title": "Id",
               "description": "Record id."
+            },
+            "schema": {
+              "type": "integer",
+              "title": "Schema version",
+              "description": "Schema version."
             },
             "enabled": {
               "type": "boolean",
@@ -635,6 +665,9 @@
         },
         "uiSchema": {
           "id": {
+            "ui:widget": "hidden"
+          },
+          "schema": {
             "ui:widget": "hidden"
           },
           "details": {
