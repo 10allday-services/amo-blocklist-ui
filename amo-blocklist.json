@@ -4,7 +4,7 @@
       "name": "add-ons",
       "synced": true,
       "config": {
-        "displayFields": ["enabled", "guid", "os"],
+        "displayFields": ["enabled", "blockID", "guid", "os"],
         "schema": {
           "definitions": {
             "minVersion": {
@@ -212,7 +212,7 @@
       "name": "certificates",
       "synced": true,
       "config": {
-        "displayFields": ["enabled", "issuerName"],
+        "displayFields": ["enabled", "blockID", "issuerName"],
         "schema": {
           "title": "Certificate",
           "description": "A blocked certificate entry.",
@@ -290,7 +290,7 @@
       "name": "gfx",
       "synced": true,
       "config": {
-        "displayFields": ["enabled", "os", "vendor", "feature"],
+        "displayFields": ["enabled", "blockID", "os", "vendor", "feature"],
         "schema": {
           "title": "Gfx",
           "description": "A graphic driver blocklist entry.",
@@ -478,7 +478,7 @@
       "name": "plugins",
       "synced": true,
       "config": {
-        "displayFields": ["enabled", "os", "matchName", "matchFilename", "matchDescription"],
+        "displayFields": ["enabled", "blockID", "os", "matchName", "matchFilename", "matchDescription"],
         "schema": {
           "definitions": {
             "minVersion": {
