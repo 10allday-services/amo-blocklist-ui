@@ -200,6 +200,9 @@
           "schema": {
             "ui:widget": "hidden"
           },
+          "blockID": {
+            "ui:readonly": true
+          },
           "details": {
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
@@ -278,6 +281,9 @@
           },
           "schema": {
             "ui:widget": "hidden"
+          },
+          "blockID": {
+            "ui:readonly": true
           },
           "details": {
             "why": {"ui:widget": "textarea"},
@@ -466,6 +472,9 @@
           },
           "schema": {
             "ui:widget": "hidden"
+          },
+          "blockID": {
+            "ui:readonly": true
           },
           "details": {
             "why": {"ui:widget": "textarea"},
@@ -669,6 +678,9 @@
           },
           "schema": {
             "ui:widget": "hidden"
+          },
+          "blockID": {
+            "ui:readonly": true
           },
           "details": {
             "why": {"ui:widget": "textarea"},
