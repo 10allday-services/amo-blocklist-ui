@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "history": "^1.17.0",
-    "kinto-admin": "^0.13.2"
+    "kinto-admin": "^0.14.0"
   },
   "devDependencies": {
     "fake-indexeddb": "1.0.3",
