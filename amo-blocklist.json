@@ -206,7 +206,7 @@
           "details": {
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
-            "created": {"type": "string", "format": "date-time"}
+            "created": {"ui:readonly": true}
           }
         }
       }
@@ -287,7 +287,8 @@
           },
           "details": {
             "why": {"ui:widget": "textarea"},
-            "who": {"ui:widget": "textarea"}
+            "who": {"ui:widget": "textarea"},
+            "created": {"ui:readonly": true}
           }
         }
       }
@@ -478,7 +479,8 @@
           },
           "details": {
             "why": {"ui:widget": "textarea"},
-            "who": {"ui:widget": "textarea"}
+            "who": {"ui:widget": "textarea"},
+            "created": {"ui:readonly": true}
           }
         }
       }
@@ -684,7 +686,8 @@
           },
           "details": {
             "why": {"ui:widget": "textarea"},
-            "who": {"ui:widget": "textarea"}
+            "who": {"ui:widget": "textarea"},
+            "created": {"ui:readonly": true}
           }
         }
       }
