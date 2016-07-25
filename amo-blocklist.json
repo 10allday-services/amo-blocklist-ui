@@ -275,6 +275,18 @@
       "config": {
         "displayFields": ["enabled", "os", "vendor", "feature"],
         "schema": {
+          "definitions": {
+            "minVersion": {
+              "type": "string",
+              "title": "Min version",
+              "description": "The mininum version."
+            },
+            "maxVersion": {
+              "type": "string",
+              "title": "Max version",
+              "description": "The maximum version."
+            }
+          },
           "title": "Gfx",
           "description": "A graphic driver blocklist entry.",
           "type": "object",
@@ -306,6 +318,22 @@
               "title": "Enabled",
               "description": "blocking rule is enabled.",
               "default": false
+            },
+            "versionRange": {
+              "type": "object",
+              "title": "Version range",
+              "description": "Version range",
+              "additionalProperties": false,
+              "default": {
+                "minVersion": "",
+                "maxVersion": "",
+                "severity": 0,
+                "vulnerabilityStatus": 0
+              },
+              "properties": {
+                "minVersion": {"$ref": "#/definitions/minVersion"},
+                "maxVersion": {"$ref": "#/definitions/maxVersion"}
+              }
             },
             "os": {
               "type": "string",
