@@ -496,6 +496,23 @@
           }
         },
         "uiSchema": {
+          "ui:order": [
+            "enabled",
+            "vendor",
+            "devices",
+            "os",
+            "driverVersion",
+            "driverVersionMax",
+            "driverVersionComparator",
+            "feature",
+            "featureStatus",
+            "hardware",
+            "versionRange",
+            "details",
+            "id",
+            "schema",
+            "blockID"
+          ],
           "id": {
             "ui:widget": "hidden"
           },
