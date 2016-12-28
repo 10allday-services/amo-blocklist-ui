@@ -199,6 +199,25 @@
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
+          },
+          "versionRange": {
+            "items": {
+              "ui:order": [
+                "minVersion",
+                "maxVersion",
+                "severity",
+                "targetApplication"
+              ],
+              "targetApplication": {
+                "items": {
+                  "ui:order": [
+                    "guid",
+                    "minVersion",
+                    "maxVersion"
+                  ]
+                }
+              }
+            }
           }
         }
       }
@@ -268,6 +287,15 @@
           }
         },
         "uiSchema": {
+          "ui:order": [
+            "id",
+            "schema",
+            "enabled",
+            "issuerName",
+            "serialNumber",
+            "details",
+            "blockID"
+          ],
           "id": {
             "ui:widget": "hidden"
           },
@@ -354,9 +382,7 @@
               "additionalProperties": false,
               "default": {
                 "minVersion": "",
-                "maxVersion": "",
-                "severity": 0,
-                "vulnerabilityStatus": 0
+                "maxVersion": ""
               },
               "properties": {
                 "minVersion": {"$ref": "#/definitions/minVersion"},
@@ -532,6 +558,12 @@
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
+          },
+          "versionRange": {
+            "ui:order": [
+              "minVersion",
+              "maxVersion"
+            ]
           }
         }
       }
@@ -720,6 +752,19 @@
           }
         },
         "uiSchema": {
+          "ui:order": [
+            "enabled",
+            "os",
+            "matchName",
+            "matchFilename",
+            "matchDescription",
+            "infoURL",
+            "versionRange",
+            "details",
+            "id",
+            "schema",
+            "blockID"
+          ],
           "id": {
             "ui:widget": "hidden"
           },
@@ -740,6 +785,26 @@
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
+          },
+          "versionRange": {
+            "items": {
+              "ui:order": [
+                "minVersion",
+                "maxVersion",
+                "severity",
+                "vulnerabilityStatus",
+                "targetApplication"
+              ],
+              "targetApplication": {
+                "items": {
+                  "ui:order": [
+                    "guid",
+                    "minVersion",
+                    "maxVersion"
+                  ]
+                }
+              }
+            }
           }
         }
       }
