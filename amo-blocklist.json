@@ -88,8 +88,7 @@
                 "default": {
                   "minVersion": "",
                   "maxVersion": "",
-                  "severity": 0,
-                  "vulnerabilityStatus": 0
+                  "severity": 0
                 },
                 "properties": {
                   "minVersion": {"$ref": "#/definitions/minVersion"},
@@ -103,22 +102,6 @@
                       1,
                       2,
                       3
-                    ],
-                    "default": 0
-                  },
-                  "vulnerabilityStatus": {
-                    "type": "integer",
-                    "title": "Vulnerability status",
-                    "description": "The vulnerability status code number.",
-                    "enum": [
-                      0,
-                      1,
-                      2
-                    ],
-                    "enumNames": [
-                      "",
-                      "Update available",
-                      "Update unavailable"
                     ],
                     "default": 0
                   },
