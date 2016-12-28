@@ -80,11 +80,17 @@
               "title": "Versions",
               "description": "The list of impacted versions.",
               "default": [],
+              "minItems": 1,
               "items": {
                 "type": "object",
                 "title": "Version range",
                 "description": "Version range",
                 "additionalProperties": false,
+                "required": [
+                  "minVersion",
+                  "maxVersion",
+                  "severity"
+                ],
                 "default": {
                   "minVersion": "",
                   "maxVersion": "",
