@@ -535,8 +535,8 @@
               "bug",
               "created"
             ],
-            "why": {"ui:widget": "textarea"},
-            "who": {"ui:widget": "textarea"},
+            "why": {"ui:widget": "hidden"},
+            "who": {"ui:widget": "hidden"},
             "created": {"ui:readonly": true}
           }
         }
