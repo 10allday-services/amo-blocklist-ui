@@ -204,6 +204,13 @@
             "ui:readonly": true
           },
           "details": {
+            "ui:order": [
+              "name",
+              "why",
+              "who",
+              "bug",
+              "created"
+            ],
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
@@ -286,6 +293,13 @@
             "ui:readonly": true
           },
           "details": {
+            "ui:order": [
+              "name",
+              "why",
+              "who",
+              "bug",
+              "created"
+            ],
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
@@ -523,6 +537,13 @@
             "ui:readonly": true
           },
           "details": {
+            "ui:order": [
+              "name",
+              "why",
+              "who",
+              "bug",
+              "created"
+            ],
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
@@ -724,6 +745,13 @@
             "ui:readonly": true
           },
           "details": {
+            "ui:order": [
+              "name",
+              "why",
+              "who",
+              "bug",
+              "created"
+            ],
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
