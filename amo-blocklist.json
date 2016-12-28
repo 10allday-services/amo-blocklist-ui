@@ -88,8 +88,7 @@
                 "default": {
                   "minVersion": "",
                   "maxVersion": "",
-                  "severity": 1,
-                  "vulnerabilityStatus": 0
+                  "severity": 1
                 },
                 "properties": {
                   "minVersion": {"$ref": "#/definitions/minVersion"},
@@ -107,22 +106,6 @@
                       "3 - Hard block"
                     ],
                     "default": 1
-                  },
-                  "vulnerabilityStatus": {
-                    "type": "integer",
-                    "title": "Vulnerability status",
-                    "description": "The vulnerability status code number.",
-                    "enum": [
-                      0,
-                      1,
-                      2
-                    ],
-                    "enumNames": [
-                      "",
-                      "Update available",
-                      "Update unavailable"
-                    ],
-                    "default": 0
                   },
                   "targetApplication": {
                     "type": "array",
@@ -206,6 +189,13 @@
             "ui:readonly": true
           },
           "details": {
+            "ui:order": [
+              "name",
+              "why",
+              "who",
+              "bug",
+              "created"
+            ],
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
@@ -288,6 +278,13 @@
             "ui:readonly": true
           },
           "details": {
+            "ui:order": [
+              "name",
+              "why",
+              "who",
+              "bug",
+              "created"
+            ],
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
@@ -498,6 +495,23 @@
           }
         },
         "uiSchema": {
+          "ui:order": [
+            "enabled",
+            "vendor",
+            "devices",
+            "os",
+            "driverVersion",
+            "driverVersionMax",
+            "driverVersionComparator",
+            "feature",
+            "featureStatus",
+            "hardware",
+            "versionRange",
+            "details",
+            "id",
+            "schema",
+            "blockID"
+          ],
           "id": {
             "ui:widget": "hidden"
           },
@@ -508,6 +522,13 @@
             "ui:readonly": true
           },
           "details": {
+            "ui:order": [
+              "name",
+              "why",
+              "who",
+              "bug",
+              "created"
+            ],
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
@@ -542,7 +563,6 @@
           ],
           "default": {
             "os": "",
-            "xpcomabi": "",
             "matchName": "",
             "matchFilename": "",
             "matchDescription": "",
@@ -571,11 +591,6 @@
               "title": "OS",
               "description": "The comma-separated operating system identifiers, eg. Darwin,Linux",
               "pattern": "^[^,]*(,[^,]+)*$"
-            },
-            "xpcomabi": {
-              "type": "string",
-              "title": "XPCOM ABI",
-              "description": "The comma-separated XPCOM binary interfaces, eg. x86-gcc3,x86_64-msvc."
             },
             "matchName": {
               "type": "string",
@@ -715,6 +730,13 @@
             "ui:readonly": true
           },
           "details": {
+            "ui:order": [
+              "name",
+              "why",
+              "who",
+              "bug",
+              "created"
+            ],
             "why": {"ui:widget": "textarea"},
             "who": {"ui:widget": "textarea"},
             "created": {"ui:readonly": true}
