@@ -540,7 +540,6 @@
           ],
           "default": {
             "os": "",
-            "xpcomabi": "",
             "matchName": "",
             "matchFilename": "",
             "matchDescription": "",
@@ -569,11 +568,6 @@
               "title": "OS",
               "description": "The comma-separated operating system identifiers, eg. Darwin,Linux",
               "pattern": "^[^,]*(,[^,]+)*$"
-            },
-            "xpcomabi": {
-              "type": "string",
-              "title": "XPCOM ABI",
-              "description": "The comma-separated XPCOM binary interfaces, eg. x86-gcc3,x86_64-msvc."
             },
             "matchName": {
               "type": "string",
