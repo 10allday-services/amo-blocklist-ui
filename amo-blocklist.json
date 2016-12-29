@@ -46,7 +46,7 @@
               "type": "boolean",
               "title": "Enabled",
               "description": "blocking rule is enabled.",
-              "default": false
+              "default": true
             },
             "guid": {
               "type": "string",
@@ -261,7 +261,7 @@
               "type": "boolean",
               "title": "Enabled",
               "description": "blocking rule is enabled.",
-              "default": false
+              "default": true
             },
             "blockID": {
               "type": "string",
@@ -379,7 +379,7 @@
               "type": "boolean",
               "title": "Enabled",
               "description": "blocking rule is enabled.",
-              "default": false
+              "default": true
             },
             "versionRange": {
               "type": "object",
@@ -622,7 +622,7 @@
               "type": "boolean",
               "title": "Enabled",
               "description": "blocking rule is enabled.",
-              "default": false
+              "default": true
             },
             "os": {
               "type": "string",
