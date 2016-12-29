@@ -29,7 +29,11 @@
             "guid": "",
             "os": "",
             "prefs": [],
-            "versionRange": [{}]
+            "versionRange": [{
+              "minVersion": "0",
+              "maxVersion": "*",
+              "severity": 1
+            }]
           },
           "properties": {
             "id": {
@@ -79,8 +83,6 @@
               "type": "array",
               "title": "Versions",
               "description": "The list of impacted versions.",
-              "default": [],
-              "minItems": 1,
               "items": {
                 "type": "object",
                 "title": "Version range",
@@ -605,7 +607,12 @@
             "matchFilename": "",
             "matchDescription": "",
             "infoURL": "",
-            "versionRange": [{}]
+            "versionRange": [{
+              "minVersion": "0",
+              "maxVersion": "*",
+              "severity": 0,
+              "vulnerabilityStatus": 0
+            }]
           },
           "properties": {
             "id": {
@@ -654,7 +661,6 @@
               "type": "array",
               "title": "Versions",
               "description": "The list of impacted versions.",
-              "default": [],
               "items": {
                 "type": "object",
                 "title": "Version range",
