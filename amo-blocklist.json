@@ -196,6 +196,9 @@
           "blockID": {
             "ui:readonly": true
           },
+          "enabled": {
+            "ui:help": "When checked this blocklist rule will apply to Firefox users."
+          },
           "details": {
             "ui:order": [
               "name",
@@ -312,6 +315,9 @@
           },
           "blockID": {
             "ui:readonly": true
+          },
+          "enabled": {
+            "ui:help": "When checked this blocklist rule will apply to Firefox users."
           },
           "details": {
             "ui:order": [
@@ -555,6 +561,9 @@
           "blockID": {
             "ui:readonly": true
           },
+          "enabled": {
+            "ui:help": "When checked this blocklist rule will apply to Firefox users."
+          },
           "details": {
             "ui:order": [
               "name",
@@ -785,6 +794,9 @@
           },
           "blockID": {
             "ui:readonly": true
+          },
+          "enabled": {
+            "ui:help": "When checked this blocklist rule will apply to Firefox users."
           },
           "details": {
             "ui:order": [
