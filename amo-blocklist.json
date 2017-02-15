@@ -27,7 +27,6 @@
           ],
           "default": {
             "guid": "",
-            "os": "",
             "prefs": [],
             "versionRange": [{
               "minVersion": "0",
@@ -625,11 +624,6 @@
             "versionRange"
           ],
           "default": {
-            "os": "",
-            "matchName": "",
-            "matchFilename": "",
-            "matchDescription": "",
-            "infoURL": "",
             "versionRange": [{
               "minVersion": "0",
               "maxVersion": "*",
