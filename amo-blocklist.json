@@ -657,17 +657,17 @@
             "matchName": {
               "type": "string",
               "title": "Name match",
-              "description": "A plugin name pattern to match."
+              "description": "A plugin name pattern to match (JavaScript RegExp syntax)."
             },
             "matchFilename": {
               "type": "string",
               "title": "Filename match",
-              "description": "A plugin filename pattern to match."
+              "description": "A plugin filename pattern to match (JavaScript RegExp syntax)."
             },
             "matchDescription": {
               "type": "string",
               "title": "Description match",
-              "description": "A plugin description pattern to match."
+              "description": "A plugin description pattern to match (JavaScript RegExp syntax)."
             },
             "infoURL": {
               "type": "string",
