@@ -54,7 +54,7 @@
             "guid": {
               "type": "string",
               "title": "Add-on id",
-              "description": "The add-on unique identifier or a regular expression.",
+              "description": "The add-on unique identifier or a regular expression. In case of a RegExp, it must conform to the JavaScript syntax, enclosed within slashes (/).",
               "minLength": 1,
               "default": ""
             },
@@ -657,17 +657,17 @@
             "matchName": {
               "type": "string",
               "title": "Name match",
-              "description": "A plugin name pattern to match (JavaScript RegExp syntax)."
+              "description": "A plugin name pattern to match (JavaScript regular expression syntax)."
             },
             "matchFilename": {
               "type": "string",
               "title": "Filename match",
-              "description": "A plugin filename pattern to match (JavaScript RegExp syntax)."
+              "description": "A plugin filename pattern to match (JavaScript regular expression syntax)."
             },
             "matchDescription": {
               "type": "string",
               "title": "Description match",
-              "description": "A plugin description pattern to match (JavaScript RegExp syntax)."
+              "description": "A plugin description pattern to match (JavaScript regular expression syntax)."
             },
             "infoURL": {
               "type": "string",
