@@ -54,7 +54,7 @@
             "guid": {
               "type": "string",
               "title": "Add-on id",
-              "description": "The add-on unique identifier or a regular expression. In case of a RegExp, it must conform to the JavaScript syntax, enclosed within slashes (/).",
+              "description": "The add-on unique identifier or a regular expression.",
               "minLength": 1,
               "default": ""
             },
@@ -192,6 +192,9 @@
           ],
           "id": {
             "ui:widget": "hidden"
+          },
+          "guid": {
+            "ui:help": "In case of a RegExp, the value must conform to the JavaScript syntax, enclosed within slashes (/)."
           },
           "schema": {
             "ui:widget": "hidden"
@@ -657,17 +660,17 @@
             "matchName": {
               "type": "string",
               "title": "Name match",
-              "description": "A plugin name pattern to match (JavaScript regular expression syntax)."
+              "description": "A plugin name pattern to match."
             },
             "matchFilename": {
               "type": "string",
               "title": "Filename match",
-              "description": "A plugin filename pattern to match (JavaScript regular expression syntax)."
+              "description": "A plugin filename pattern to match."
             },
             "matchDescription": {
               "type": "string",
               "title": "Description match",
-              "description": "A plugin description pattern to match (JavaScript regular expression syntax)."
+              "description": "A plugin description pattern to match."
             },
             "infoURL": {
               "type": "string",
@@ -812,6 +815,12 @@
           },
           "matchName": {
             "ui:widget": "hidden"
+          },
+          "matchFilename": {
+            "ui:help": "The value must conform to the RegExp JavaScript syntax, with expression delimiters omitted (no /)."
+          },
+          "matchDescription": {
+            "ui:help": "The value must conform to the RegExp JavaScript syntax, with expression delimiters omitted (no /)."
           },
           "details": {
             "ui:order": [
